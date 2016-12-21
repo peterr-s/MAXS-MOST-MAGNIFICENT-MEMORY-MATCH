@@ -88,7 +88,7 @@ public class Game extends JFrame
 					repaint(); // refresh
 				}
 				else if(turnedCard.equals(thisCard)) // why are you flipping and unflipping the same card
-				{
+				{ // question is ambiguous; comment this if statement's body to disallow peeking
 					turnedCard.setText(""); // no card is flipped
 					turnedCard = null; // this card is also not flipped
 					repaint();
